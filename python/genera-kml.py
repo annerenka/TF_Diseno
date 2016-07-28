@@ -1,3 +1,10 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 nombre_de_mapa = "mapa"
 encabezado = "<?xml version='1.0' encoding='UTF-8'?><kml xmlns='http://www.opengis.net/kml/2.2'><Document><name>"+nombre_de_mapa+"</name><description><![CDATA[]]></description><Folder><name>Carpeta</name>"
 read_data = open('input')
