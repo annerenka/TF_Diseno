@@ -1,3 +1,10 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 # Uso:
 #
 #	genera_D_G(input1,A,p,t_max,r_max)
@@ -11,30 +18,30 @@
 # destino, y la matriz A de 2ax3, y calcula todas las rutas
 # posibles para cada par origen-destino en input1.
 # p debe ser el promedio de costo de aristas del grafo dado
-# por A, t_max es el tiempo %*máximo*) que %*estará*) buscando nuevas
-# rutas %*después*) de haber encontrado la primera, y r_max es la
-# cantidad %*máxima*) de rutas que %*encontrará*) por cada par.
-# Finalmente, %*generará*) tres archivos:
+# por A, t_max es el tiempo máximo que estará buscando nuevas
+# rutas después de haber encontrado la primera, y r_max es la
+# cantidad máxima de rutas que encontrará por cada par.
+# Finalmente, generará tres archivos:
 #   i- 'Delta': un archivo que contiene una matriz de dx2,
 #       donde los primero dos elementos de cada fila 
-#       describen una %*posición*) en la matriz Delta a donde hay
+#       describen una posición en la matriz Delta a donde hay
 #       un 1.
 #       La matriz asi descrita contiene las rutas posibles
 #       entre los pares origen-destino proporcionados por el
 #       archivo input1.
-#       La matriz no %*contendrá*) ninguna fila para los pares
+#       La matriz no contendrá ninguna fila para los pares
 #       para los que no haya encontrado ninguna ruta posible.
-#       El %*tamaño*) de Delta es de tantas filas como rutas haya 
+#       El tamaño de Delta es de tantas filas como rutas haya 
 #       encontrado, y tantas columnas como aristas tenga el
 #       grafo dado por A.
-#       Las rutas %*están*) descriptas con un 1 en cada columna 
+#       Las rutas están descriptas con un 1 en cada columna 
 #       correspondiente a una arista del grafo que pertenezca
 #       a esa ruta.
 #   ii- 'Gamma': un archivo que contiene una matriz de gx3,
 #       donde los primero dos elementos de cada fila 
-#       describen una %*posición*) en la matriz Gamma, y el
-#       tercer elemento contiene el valor que %*está*) en esa
-#       %*posición*). La matriz asi descrita contiene tantas
+#       describen una posición en la matriz Gamma, y el
+#       tercer elemento contiene el valor que está en esa
+#       posición. La matriz asi descrita contiene tantas
 #       filas como pares origen-destino a los que se les haya 
 #       encontrado al menos una ruta, y tantas columnas como
 #       filas tenga Delta. 
