@@ -9,23 +9,23 @@
 # A de nxm, devuelve el arreglo y, de rxn, donde r es la 
 # cantidad de rutas encontradas entre i y j, y n es la 
 # cantidad de aristas del grafo. 'p' es el promedio de costo
-# de aristas del grafo, la %*ejecución*) de la segunda parte del 
+# de aristas del grafo, la ejecución de la segunda parte del 
 # algoritmo no excede t_max, y no busca mas de r_max rutas.
-# Primero realiza una %*búsqueda*) con un algoritmo 'A estrella',
+# Primero realiza una búsqueda con un algoritmo 'A estrella',
 # y luego lleva adelante un algoritmo 'Busqueda en 
-# profundidad' para encontrar %*más*) rutas.
-# La cantidad %*máxima*) de nodos que puede tener un camino esta
-# en %*función*) de la longitud del camino %*óptimo*) encontrado con
+# profundidad' para encontrar más rutas.
+# La cantidad máxima de nodos que puede tener un camino esta
+# en función de la longitud del camino óptimo encontrado con
 # 'A estrella' (se permiten aproximadamente un 25 % de nodos
-# %*más*)).
+# más).
 # El promedio de costo de aristas de A es usado al llamar 
 # a dist_n para descartar caminos que se hayan alejado mucho
 # del destino.
 # Las rutas (filas) de y, son un arreglo que tiene un 1 en la
 # columna que se corresponde con cada arista que haya sido 
 # usada en esa ruta.
-# 'y' %*está*) en formato sparse
-# Si no encuentra %*ningún*) camino, devuelve un vector %*vacío*).
+# 'y' está en formato sparse
+# Si no encuentra ningún camino, devuelve un vector vacío.
 #
 # NOTA: usa a_star.m, salientes.m, entrantes.m, dist_n.m y 
 # arista.m
