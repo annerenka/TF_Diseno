@@ -1,3 +1,10 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 # Uso:
 #
 #	genera_g_OD(input1,input2,input3)
@@ -9,7 +16,7 @@
 # input3 = nodos_lineas
 # Toma el archivo input1, una matriz de nx2, de nodos 
 # descriptos por indices de pares de aristas que tengan ese 
-# nodo en %*común*); el archivo input2, una matriz de mx4, de 
+# nodo en común; el archivo input2, una matriz de mx4, de 
 # indices de nodos de paradas como el generado por 
 # 'genera_matriz_A_2', y el archivo input3, una matriz de 
 # pxl, de indices de nodos de lineas como el generado por 
