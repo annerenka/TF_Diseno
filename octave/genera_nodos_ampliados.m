@@ -1,3 +1,10 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 # Uso:
 #
 #	genera_nodos_ampliados(input1,input2,input3)
@@ -9,9 +16,9 @@
 # input1 = paradas
 # Dados input1, una matriz de nx2 de coordenadas de los nodos
 # de un grafo, input2, una matriz de rxp de indices de 
-# paradas (de %*ubicación*) en 'paradas') de las paradas que 
+# paradas (de ubicación en 'paradas') de las paradas que 
 # recorre cada linea de colectivos, e input3, una matriz de
-# 1xm, de indices de los nodos en los que %*está*) cada parada,
+# 1xm, de indices de los nodos en los que está cada parada,
 # genera un archivo:
 #   'nodos_amp': un archivo que contiene una matriz de n_2x2,
 #       de las coordenadas de los nodos de matriz_A_2, aunque
