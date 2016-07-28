@@ -1,13 +1,20 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 # Uso:
 #
 #	y=nodo(i,j)
 #
-# Donde i y j deben ser %*números*) enteros, o vectores columna de 
-# enteros del mismo %*tamaño*).
+# Donde i y j deben ser números enteros, o vectores columna de 
+# enteros del mismo tamaño.
 # Dados i y j, indices de aristas del grafo, si las aristas 
 # i(k) y j(k) comparten el nodo n,entonces y(k)=n, sino 
 # y(k)=0.
-# Se tiene que 'y' %*será*) un vector de 1x(rows(i))
+# Se tiene que 'y' será un vector de 1x(rows(i))
 #
 function y=nodo(i,j)
 	indice_aristas=load("indice_aristas");
