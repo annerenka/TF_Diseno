@@ -1,3 +1,10 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 # Uso:
 #
 #	genera_matriz_A_2(input1,input2)
@@ -6,25 +13,25 @@
 # input1=lineas
 # input2=matriz_A
 # Toma el archivo input1, una matriz de (m+1)x2n de 
-# %*descripción*) de paradas de las lineas, y el archivo input2, 
-# una matriz de 2kx3, de %*descripción*) de la matriz de incidencia 
+# descripción de paradas de las lineas, y el archivo input2, 
+# una matriz de 2kx3, de descripción de la matriz de incidencia 
 # del grafo, y genera 6 archivos:
 #	1- "paradas": un archivo que contiene una matriz de 1xp, 
 #		donde p es la cantidad de paradas que hay en total en 
-#		el grafo. Cada entrada es el %*índice*) del nodo sobre el 
-#		que %*está*) la parada.
+#		el grafo. Cada entrada es el índice del nodo sobre el 
+#		que está la parada.
 #	2- "indice_paradas": un archivo que contiene una matriz 
 #		de nxm, donde n es la cantidad de lineas, y m es la 
-#		cantidad %*máxima*) de paradas. Cada fila contiene los 
-#		%*índices*) de las paradas de esa linea, %*según*) el archivo 
+#		cantidad máxima de paradas. Cada fila contiene los 
+#		índices de las paradas de esa linea, según el archivo 
 #		'paradas', en el orden en el que son recorridas, 
 #		completadas con ceros de ser necesario.
 #	3- "nodos_paradas": un archivo que contiene una matriz de 
 #		px4, donde p es la cantidad de paradas. Cada fila se 
 #		inicia con el indice del nodo en el que se encuentra 
-#		la parada en el grafo, y a %*continuación*) los indices de 
+#		la parada en el grafo, y a continuación los indices de 
 #		los tres nodos que genera para cada parada, i_1, i_2 
-#		e i_3. Estos nuevos nodos %*están*) conectados de la 
+#		e i_3. Estos nuevos nodos están conectados de la 
 #		siguiente manera:
 #
 #           p -- > i_1 --> i_2 --> i_3
@@ -38,16 +45,16 @@
 #		el nodo i_3.
 #	4- "nodos_lineas": un archivo que contiene una matriz de 
 #		nx(2m+2), donde n es la cantidad de lineas, y m es la 
-#		cantidad %*máxima*) de paradas. Cada fila contiene los 
+#		cantidad máxima de paradas. Cada fila contiene los 
 #		indices de los nodos que genera para cada linea. 
-#		Estos nuevos nodos %*están*) conectados de la siguiente 
+#		Estos nuevos nodos están conectados de la siguiente 
 #		manera:
 #			El primer nodo es el nodo de inicio de la linea, 
 #		y se conecta al segundo:
 #
 #       s --> 'primer parada'
 #
-#		A partir de %*ahí*), en cada parada hay dos nodos, 
+#		A partir de ahí, en cada parada hay dos nodos, 
 #		conectados a los nodos de las paradas de la siguiente 
 #		manera:
 #
@@ -56,29 +63,29 @@
 #                          v       |
 #                   p --> i_1 --> i_2 --> i_3
 #
-#		Y el %*último*) nodo es el nodo de fin de linea y se 
-#		conecta al de la %*última*) parada:
+#		Y el último nodo es el nodo de fin de linea y se 
+#		conecta al de la última parada:
 #
-#       '%*última*) parada' --> f
+#       'última parada' --> f
 #
-#		La primera y la %*última*) arista generada tienen costo 
+#		La primera y la última arista generada tienen costo 
 #		cero. Las aristas i_4 --> i_5, i_4 --> i_1 e 
 #		i_2 --> i_5 tienen costo cero.
 #	5- "matriz_A_2": un archivo que contiene una matriz de 
 #		2*(k_2)x3, donde k_2 es la cantidad de aristas del 
 #		nuevo grafo. De los tres elementos de cada fila, los 
-#		primeros dos son la %*posición*) del elemento en la 
+#		primeros dos son la posición del elemento en la 
 #		matriz_A_2, cuyo valor es el tercer elemento de la 
 #		fila correspondiente. 
 # sparse(matriz_A_2(:,1),matriz_A_2(:,2),matriz_A_2(:,3)) 
-#		%*será*) una matriz de (k_2)x(l_2), donde k_2 es la 
+#		será una matriz de (k_2)x(l_2), donde k_2 es la 
 #		cantidad de aristas del nuevo grafo y l_2 es la 
 #		cantidad de nodos del nuevo grafo. Las filas de 
 #		matriz_A_2 siguen el mismo criterio que las de 
 #		matriz_A.
 #	6- "reg_A": un archivo que contiene una matriz de 1x4. 
 #		Cada entrada representa la cantidad de aristas que 
-#		%*tenía*) el grafo a medida que se iban agregando en los 
+#		tenía el grafo a medida que se iban agregando en los 
 #		distintos pasos.
 #
 #	NOTA: usa nodo.m
