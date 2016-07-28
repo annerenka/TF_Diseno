@@ -1,3 +1,10 @@
+## Copyright (C) 2015 Nicolás Jares
+##
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 # Uso:
 #
 #	genera_costo_aristas(in1,in2,in3,in4,in5,in6)
@@ -11,14 +18,14 @@
 # in5 = paradas
 # in6 = nodos
 # Toma el archivo in1, una matriz de 1x4, de registro del 
-# %*tamaño*) de matriz_A luego de agregar aristas en 
+# tamaño de matriz_A luego de agregar aristas en 
 # genera_matriz_A_2'; el archivo in2, una matriz de 
 # nx(2*m+2), de indices de los nodos que recorre cada linea; 
 # el archivo in3, una matriz de ax6, de coordenadas de inicio
 # y fin de cada arista; el archivo in4, una matriz de nxm, de
-# %*índices*) de las paradas (%*según*) 'paradas') de las paradas que
+# índices de las paradas (según 'paradas') de las paradas que
 # recorre cada linea; el archivo in5, una matriz de 1xp, de
-# indices de los nodos a donde %*está*) cada parada en el grafo;
+# indices de los nodos a donde está cada parada en el grafo;
 # y el archivo in6, una matriz de lx2, de coordenadas en las
 # que se encuentra cada nodo; y genera 1 archivo:
 #   "costo_aristas": un archivo que contiene una matriz de 
